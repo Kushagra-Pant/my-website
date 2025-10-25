@@ -4,7 +4,9 @@
 }
 
 html {
-  background-color: #379ef3;
+  animation: bgCycle 240s infinite;
+  height: 100%;
+  /* background: black; Only for if using Background.tsx*/
 }
 
 a {
@@ -37,4 +39,73 @@ h1 {
   display: flex;
   align-items: stretch;
   width: 100%;
+}
+
+@keyframes bgCycle {        
+  0%  { background-color: oklch(24.06% 0.0626 246.531); }   
+  20% { background-color: oklch(0% 0 0); }               
+  35%  { background-color: oklch(28.974% 0.04964 188.5); }        
+  45%  { background-color: oklch(22.158% 0.06996 139.089); } 
+  60%  { background-color: oklch(20.162% 0.08274 29.223); }   
+  80%  { background-color: oklch(19.715% 0.10333 303.41); }   
+  100%  { background-color: oklch(24.06% 0.0626 246.531); }
+}
+
+/*Old Colors: */
+/* @keyframes bgCycle {
+  0%, 10%   { background-color: oklch(0% 0 0); }         
+  25%  { background-color: oklch(79.796% 0.15824 67.807); } 
+  35%, 50%, 65%  { background-color: oklch(80% 0.25 250); }    
+  75%  { background-color: oklch(30.901% 0.16088 300.68); }      
+  90%, 100% { background-color: oklch(0% 0 0); }
+} */
+/* @keyframes bgCycle {
+  0% {
+    background: linear-gradient(to top, black, midnightblue);
+  }
+  33% {
+    background: linear-gradient(to top, deepskyblue, lightblue, white);
+  }
+  66% {
+    background: linear-gradient(to top, black 0%, crimson 50%, orange 100%);
+  }
+  100% {
+    background: linear-gradient(to top, black, midnightblue);
+  }
+} */
+
+/* @keyframes starCycle {
+  0%   { display: flex; }
+  20%, 70%  { display: none; }
+  100%   { display: flex; }
+} */
+
+.star {
+  opacity: 0;
+    animation: twinkle 3s infinite ease-in-out;
+    position: absolute;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+.star-container {
+    /* animation: starCycle 120s infinite; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-position-x: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
 }

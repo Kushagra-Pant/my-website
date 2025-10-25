@@ -17,7 +17,7 @@ function WideCard({title, content, imageSrc=""}: CardProps) {
     );
   } else {
     elements.push(
-      <div style={{ width: "75%",  margin: "0", display: "inline" }}>
+      <div style={{ width: "75%",  margin: "0", display: "grid", paddingTop: "2%"}}>
         <p>{content}</p>
       </div>
     );
@@ -31,7 +31,7 @@ function WideCard({title, content, imageSrc=""}: CardProps) {
   return(
         <div className="card widecard">
             <h1>{title}</h1>
-            <div style={{display: "inline"}}>
+            <div style={{display: "inline-flex"}}>
               {elements}
             </div>
         </div>
