@@ -1,0 +1,22 @@
+.card{
+  background-color: white;
+  border: 3px black solid;
+  border-radius: 15px;
+  display: inline-grid;
+  margin: 3%;
+  padding: 16px;
+  width: 30%;
+}
+
+.widecard{
+  width: 90%;
+}
+
+p {
+  font-size: min(20px, 3vw);
+}
+
+img {
+  border-radius: 100%;
+  border: 2px black solid;
+}

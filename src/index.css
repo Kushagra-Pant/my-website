@@ -3,6 +3,10 @@
   line-height: 1.5;
 }
 
+html {
+  background-color: #379ef3;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -33,13 +37,4 @@ h1 {
   display: flex;
   align-items: stretch;
   width: 100%;
-}
-
-.card{
-  border: 3px black solid;
-  border-radius: 15px;
-  display: inline-grid;
-  margin: 3%;
-  padding: 16px;
-  width: 30%;
 }

@@ -1,4 +1,4 @@
-import "./index.css"
+import "../index.css"
 import colors from './colors.json';
 import React from "react";
 
@@ -14,7 +14,11 @@ function TagRow(tags: TagRowProps) {
     let tagElements: React.ReactElement[] = [];
 
     for (let i = 0; i < length(tags); i++) {
-        tagElements.push(<span className="tag" style={{backgroundColor: getColor(tags.tags[i])}} >{tags.tags[i]}</span>);
+        tagElements.push(
+        <span className="tag" key={i} style={{backgroundColor: getColor(tags.tags[i])}} >
+          {tags.tags[i]}
+        </span>
+      );
     }
 
     return (

@@ -1,20 +1,19 @@
-import './index.css'
-import TagRow from './TagRow'
+import '../index.css'
+import './card.css'
+import TagRow from '../TagRow/TagRow.tsx'
 
 type CardProps = {
     title: string;
     content: string;
-    likes: number;
     tags?: string[];
 }
 
-function Card({title, content, likes, tags=[]}: CardProps) {
+function Card({title, content, tags=[]}: CardProps) {
     return(
         <div className="card">
             <h2>{title}</h2>
             <TagRow tags={tags}></TagRow>
             <p>{content}</p>
-            <p>❤️ {likes} likes</p>
             
         </div>
     )
