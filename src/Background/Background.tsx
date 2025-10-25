@@ -1,3 +1,5 @@
+// This component is unused as of now. I  may have plans to integrate it later.
+
 import { motion } from "framer-motion";
 
 const gradients = [

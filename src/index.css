@@ -82,13 +82,13 @@ h1 {
 
 .star {
   opacity: 0;
-    animation: twinkle 3s infinite ease-in-out;
-    position: absolute;
-    background-color: white;
-    transform: rotate(45deg);
+  animation: twinkle 3s infinite ease-in-out;
+  position: absolute;
+  background-color: white;
+  transform: rotate(45deg);
 }
 
-.star-container {
+#starContainer {
     /* animation: starCycle 120s infinite; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,6 +96,7 @@ h1 {
     background-position-x: center;
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: -5;
