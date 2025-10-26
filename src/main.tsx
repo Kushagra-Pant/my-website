@@ -2,6 +2,18 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
+import NavBar from './NavBar/NavBar.tsx'
+
+const navItems = {
+  About: "/src/about",
+  Projects: "/src/projects",
+};
+
+createRoot(document.getElementById('navbar')!).render(
+  <StrictMode>
+    <NavBar items={navItems}></NavBar>
+  </StrictMode>,
+)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -23,7 +35,7 @@ if(starContainer != null){
       star.style.border = `${size / 2}px solid white`
 
       star.style.top = `${Math.random() * 97}vh`
-      star.style.left = `${Math.random() * 100}vw`
+      star.style.left = `${Math.random() * 97}vw`
 
       star.style.animationDelay = `${Math.random() * 2}s`
 
