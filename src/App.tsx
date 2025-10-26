@@ -1,7 +1,6 @@
 import './App.css';
 import Card from './Card/Card.tsx';
 import WideCard from './Card/WideCard.tsx';
-import NavBar from './NavBar/NavBar.tsx';
 // import Background from './Background/Background.tsx';
 
 function App() {
