@@ -6,6 +6,16 @@
   margin: 3%;
   padding: 16px;
   width: 30%;
+  animation: pulseShadow 3s infinite linear;
+}
+
+@keyframes pulseShadow {
+  0%, 100% {
+    box-shadow: 0 0 0 0;
+  }
+  50% {
+    box-shadow: 0 0 100px -30px #FFFFFF;
+  }
 }
 
 .widecard{
@@ -19,4 +29,9 @@ p {
 img {
   border-radius: 100%;
   border: 2px black solid;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover{
+  transform: scale(1.15);
 }
