@@ -95,8 +95,9 @@ h1 {
     background-position: bottom;
     background-position-x: center;
     position: absolute;
-    width: 100%;
+    width: 99%;
     height: 100%;
+    margin: 0;
     top: 0;
     left: 0;
     z-index: -5;

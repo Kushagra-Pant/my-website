@@ -7,7 +7,7 @@ function App() {
   return(
     <>
     {/* <Background></Background> */}
-      <WideCard title="Hi, I'm Kushagra!" imageSrc='/public/profile-pic.png' content="You've landed on my side of the web. Built by hand, updated when inspiration strikes. This website is all about me, my hobbies, my projects, etc. ">
+      <WideCard title="Hi, I'm Kushagra!" imageSrc='profile-pic.png' content="You've landed on my side of the web. Built by hand, updated when inspiration strikes. This website is all about me, my hobbies, my projects, etc. ">
       </WideCard>
       <div className="cardContainer">
         <Card title="Project 1" content="Description"></Card>
