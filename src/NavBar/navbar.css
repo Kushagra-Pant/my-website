@@ -22,3 +22,7 @@ nav:hover{
 .navButton:hover{
   background-color: #77dfffa9;
 }
+
+a, a:hover{
+  all: unset;
+}
