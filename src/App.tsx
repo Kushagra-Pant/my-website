@@ -9,11 +9,6 @@ function App() {
     {/* <Background></Background> */}
       <WideCard title="Hi, I'm Kushagra!" imageSrc='profile-pic.png' content="You've landed on my side of the web. Built by hand, updated when inspiration strikes. This website is all about me, my hobbies, my projects, etc. ">
       </WideCard>
-      <div className="cardContainer">
-        <Card title="Project 1" content="Description"></Card>
-        <Card title="Project 2" content="Description" tags={["HTML", "CSS", "JavaScript"]}></Card>
-        <Card title="Project 3" content="Description"></Card>
-      </div>
     </>
   )
 }
