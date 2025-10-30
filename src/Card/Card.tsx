@@ -5,7 +5,7 @@ import TagRow from '../TagRow/TagRow.tsx'
 type CardProps = {
     title: string;
     content: string;
-    date: string;
+    date?: string;
     tags?: string[];
     link?: string;
 }

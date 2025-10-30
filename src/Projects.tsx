@@ -58,7 +58,7 @@ function Projects() {
   return(
     <>
     {/* <Background></Background> */}
-      <WideCard title="Projects" content="Over the years, I have aquired many skills that are demonstrated through my extensive projects. This page details each of them, with the more impressive projects being found towards the top. \n Each project has specific tags that allow you to see which skill I demonstrated in building the project. Here are a list of all my skills, and you can Ctrl+F them in case you want to find projects with the specific skill.">
+      <WideCard title="My Projects" content="Over the years, I have aquired many skills that are demonstrated through my extensive projects. This page details each of them, with the more impressive projects being found towards the top. \n Each project has specific tags that allow you to see which skill I demonstrated in building the project. Here are a list of all my skills, and you can Ctrl+F them in case you want to find projects with a specific skill:">
         <TagRow tags={alltags.sort()}></TagRow>
       </WideCard>
       <div className="cardContainer">

@@ -7,7 +7,7 @@ import NavBar from './NavBar/NavBar.tsx'
 import Projects from './Projects.tsx'
 
 const navItems = {
-  About: "/",
+  Home: "/",
   Projects: "/projects",
 };
 

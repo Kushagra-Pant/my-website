@@ -3,12 +3,13 @@ import './card.css'
 
 type CardProps = {
     title: string;
+    titleStyle?: string;
     content: string;
     imageSrc?: string;
     children?: React.ReactNode; 
 }
 
-function WideCard({title, content, imageSrc="", children}: CardProps) {
+function WideCard({title, titleStyle="", content, imageSrc="", children}: CardProps) {
   let elements: React.ReactElement[] = [];
   let contentArray: React.ReactElement[] = [];
   let temp: String[] = content.split("\\n")
@@ -21,14 +22,14 @@ function WideCard({title, content, imageSrc="", children}: CardProps) {
 
   if(imageSrc == ""){elements.push(
       <div key="full-width-header" style={{ width: "100%" }}>
-        <h1>{title}</h1>
+        <h1 className={titleStyle}>{title}</h1>
         <p className="wideCardContent">{contentArray}</p>
       </div>
     );
   } else {
     elements.push(
       <div key="part-width-header" style={{ width: "75%",  margin: "0", display: "grid"}}>
-        <h1>{title}</h1>
+        <h1 className={titleStyle}>{title}</h1>
         <p className="wideCardContent">{contentArray}</p>
       </div>
     );
