@@ -57,17 +57,4 @@ function Projects() {
   )
 }
 
-async function getProjects() {
-  // Ask Supabase for all rows from the "projects" table
-  const { data, error } = await supabase.from("projects").select("*");
-
-  if (error) {
-    console.error("Error fetching projects:", error);
-    return [];
-  }
-
-  console.log("Projects:", data);
-  return data; // an array of objects, each representing one project
-}
-
 export default Projects;
