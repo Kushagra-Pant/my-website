@@ -23,6 +23,9 @@ nav:hover{
   background-color: #77dfffa9;
 }
 
-a, a:hover{
-  all: unset;
+.navButton a,
+.navButton a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }

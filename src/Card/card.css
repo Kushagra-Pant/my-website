@@ -5,7 +5,6 @@
   display: inline-grid;
   margin: 3%;
   padding: 16px;
-  width: 30%;
   animation: pulseShadow 3s infinite linear;
 }
 
@@ -23,7 +22,11 @@
 }
 
 p {
-  font-size: min(20px, 3vw);
+  font-size: min(15px, 3vw);
+}
+
+a {
+  color: rgb(10, 105, 173);
 }
 
 img {
@@ -34,4 +37,23 @@ img {
 
 img:hover{
   transform: scale(1.15);
+}
+
+.header{
+  border-bottom: 1px gray solid;
+  margin-bottom: 20px;
+}
+
+.fixed{
+  max-height: fit-content;
+}
+
+.date{
+  font-weight: bold;
+  color: gray; 
+  margin-top: 0;
+}
+
+h2{
+  margin-bottom: 0;
 }

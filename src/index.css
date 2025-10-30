@@ -24,21 +24,10 @@ h1 {
   line-height: 1.1;
 }
 
-.tag{
-  border: 1px black solid;
-  border-radius: 5px;
-  padding-top: 1px;
-  padding-bottom: 2px;
-  padding-inline: 4px;
-  margin: 2px;
-  background-color: red;
-  color: white;
-  font: bold;
-}
-
 .cardContainer{
-  display: flex;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   width: 100%;
 }
 

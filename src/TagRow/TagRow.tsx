@@ -1,4 +1,5 @@
 import "../index.css"
+import "./TagRow.css"
 import colors from './colors.json';
 import React from "react";
 
@@ -22,7 +23,7 @@ function TagRow(tags: TagRowProps) {
     }
 
     return (
-        <div>
+        <div className="tagRow">
             {tagElements}
         </div>
     );
