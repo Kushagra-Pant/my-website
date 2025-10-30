@@ -1,6 +1,5 @@
 import './App.css';
 import WideCard from './Card/WideCard.tsx';
-import Card from './Card/Card.tsx';
 // import Background from './Background/Background.tsx';
 
 function App() {
