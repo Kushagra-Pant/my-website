@@ -31,20 +31,7 @@ function TagRow(tags: TagRowProps) {
 
 // Colors stuff below
 function getColor(name: string): string{
-    switch(name){
-        case "HTML":
-            return colors.HTML;
-        case "CSS":
-            return colors.CSS;
-        case "JavaScript":
-            return colors.JavaScript;
-        case "Python":
-            return colors.Python;
-        case "Java":
-            return colors.Java;
-        default:
-            return "red";
-    }
+    return colors[name as keyof typeof colors] || "#808080";
 }
 
 export default TagRow;

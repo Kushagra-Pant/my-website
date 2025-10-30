@@ -1,7 +1,30 @@
 {
-    "HTML": "#fcba03",
-    "CSS": "#fc7303",
-    "Python": "#3592c4",
-    "Java": "#3836ad",
-    "JavaScript": "#ad368f"
+  "Python": "#5E60CE",
+  "Java": "#6930C3",
+  "C++": "#7400B8",
+
+  "HTML": "#FF006E",
+  "CSS": "#FB5607",
+  "JavaScript": "#FFBE0B",
+  "React": "#FF9F1C",
+  "TypeScript": "#F77F00",
+  "Bootstrap": "#E85D04",
+
+  "SQL": "#80B918",
+  "PostgreSQL": "#55A630",
+  "MongoDB": "#007F5F",
+  "Databasing": "#2D6A4F",
+  "Supabase": "#38B000",
+  "JSON": "#9EF01A",
+
+  "AI": "#4B56D2",
+  "Machine Learning": "#6930C3",
+  "RESTful APIs": "#3C096C",
+
+  "Leadership": "#FFB703",
+  "Event Coordination": "#FAA307",
+  "Hackathon Project": "#FB8500",
+
+  "Arduino": "#6C757D",
+  "Hardware": "#495057"
 }

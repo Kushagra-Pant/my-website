@@ -2,7 +2,7 @@ nav {
   font-size: 125%;
   height: 60px;
   padding: 0%;
-  display: inline-flex;
+  display: flex;
   width: 100vw;
   justify-content: center;
 }

@@ -5,22 +5,31 @@ type CardProps = {
     title: string;
     content: string;
     imageSrc?: string;
+    children?: React.ReactNode; 
 }
 
-function WideCard({title, content, imageSrc=""}: CardProps) {
+function WideCard({title, content, imageSrc="", children}: CardProps) {
   let elements: React.ReactElement[] = [];
-  
+  let contentArray: React.ReactElement[] = [];
+  let temp: String[] = content.split("\\n")
+  for(let i = 0; i < temp.length; i++){
+    contentArray.push(<>{temp[i]}</>)
+    if(i + 1 < temp.length){
+      contentArray.push(<br key={"br" + i}></br>)
+    }
+  }
+
   if(imageSrc == ""){elements.push(
       <div key="full-width-header" style={{ width: "100%" }}>
         <h1>{title}</h1>
-        <p>{content}</p>
+        <p className="wideCardContent">{contentArray}</p>
       </div>
     );
   } else {
     elements.push(
       <div key="part-width-header" style={{ width: "75%",  margin: "0", display: "grid"}}>
         <h1>{title}</h1>
-        <p>{content}</p>
+        <p className="wideCardContent">{contentArray}</p>
       </div>
     );
     elements.push(
@@ -35,6 +44,7 @@ function WideCard({title, content, imageSrc=""}: CardProps) {
             <div style={{display: "inline-flex"}}>
               {elements}
             </div>
+            {children}
         </div>
     )
 }
